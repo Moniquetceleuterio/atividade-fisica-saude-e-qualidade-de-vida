@@ -8,13 +8,12 @@ Este repositório contém material didático sobre Atividade Física, Saúde e Q
 
 ## 🎥 Vídeo explicativo  
 
-[![Qualidade de Vida: Paradoxo Moderno](Capavideo.png)](https://drive.google.com/file/d/1XGbhW_Qc0naPJdHn2xUSmiDh__2qdoUK/preview)
-
 <p align="center">
   <a href="https://drive.google.com/file/d/1XGbhW_Qc0naPJdHn2xUSmiDh__2qdoUK/preview">
     <img src="Capavideo.png" alt="Qualidade de Vida: Paradoxo Moderno" width="600">
   </a>
 </p>
+
 
 
 
