@@ -6,9 +6,16 @@ Este repositório contém material didático sobre Atividade Física, Saúde e Q
 [▶️ Ouvir o áudio “Do DNA Caçador ao Sofá: o paradoxo da atividade física e qualidade de vida”](https://drive.google.com/file/d/1qTpYXQdQAb87qpqtuV9vDDGTVVZ8zlAf/view?usp=sharing)
 
 
-### 🎥 Vídeo explicativo  
+## 🎥 Vídeo explicativo  
 
 [![Qualidade de Vida: Paradoxo Moderno](Capavideo.png)](https://drive.google.com/file/d/1XGbhW_Qc0naPJdHn2xUSmiDh__2qdoUK/preview)
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1XGbhW_Qc0naPJdHn2xUSmiDh__2qdoUK/preview">
+    <img src="Capavideo.png" alt="Qualidade de Vida: Paradoxo Moderno" width="600">
+  </a>
+</p>
+
 
 
 
