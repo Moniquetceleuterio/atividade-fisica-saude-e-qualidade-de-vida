@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Atividade Física, Saúde e Qualidade de Vida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     /* Base */
     body {
@@ -23,7 +24,7 @@
       margin: 10px auto;
     }
 
-    /* Caixa do podcast (áudio) */
+    /* Podcast (áudio) */
     .audio-box {
       background:#f0f4f8;
       border:1px solid #dce3ea;
@@ -36,7 +37,6 @@
     }
     .audio-box audio { width:100%; outline:none; }
 
-    /* Controles de velocidade */
     .speed-bar {
       margin-top:12px;
       display:flex;
@@ -64,6 +64,7 @@
       border-radius:10px;
       box-shadow:0 0 12px rgba(0,0,0,0.2);
       transition:transform .2s;
+      max-width:100%;
     }
     iframe:hover { transform: scale(1.02); }
 
@@ -99,13 +100,13 @@
     }
     .avaliacao a:hover { background:#063b6f; }
 
-    /* Referências – sem negrito/itálico, alinhadas à esquerda, espaçamento simples */
+    /* Referências – sem negrito/itálico, alinhadas à esquerda, simples */
     .referencias {
       max-width:900px;
       margin:42px auto 0;
       text-align:left;
       font-size:.9em;
-      line-height:1.2; /* simples */
+      line-height:1.2;
     }
     .referencias h3 {
       text-align:left;
@@ -126,7 +127,12 @@
       text-align:center;
       margin-top:48px;
       font-size:14px;
-      color:#555;
+      color:#444;
+      line-height:1.6;
+    }
+
+    @media (max-width: 768px) {
+      body { margin:20px; }
     }
   </style>
 </head>
@@ -198,8 +204,16 @@
     <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos. Revista Brasileira de Medicina do Esporte, v.6, n.5, 2000.</p>
   </div>
 
+  <!-- RODAPÉ LIMPO E SEM REPETIÇÃO -->
   <footer>
-     © 2025 | Professora de Educação Física Monique T. C. Eleutério | contato: eleuterio.mtc@gmail.com
+    <p>© 2025 | Professora de Educação Física Monique T. C. Eleutério – eleuterio.mtc@gmail.com</p>
+    <p style="font-size:13px; margin-top:8px;">
+      Este material está licenciado sob
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:#0a4d8c; text-decoration:none;">
+        CC BY-NC-SA 4.0
+      </a><br>
+      Uso educacional não comercial autorizado com citação.
+    </p>
   </footer>
 
   <script>
@@ -228,15 +242,3 @@
   </script>
 </body>
 </html>
-<footer style="margin-top:50px; text-align:center; font-size:14px; color:#444; line-height:1.6;">
-  <p>© 2025 | Professora de Educação Física Monique T. C. Eleutério</p>
-  <p>Contato: eleuterio.mtc@gmail.com</p>
-  <p style="font-size:13px; margin-top:8px;">
-    Este material está licenciado sob 
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:#0a4d8c; text-decoration:none;">
-      CC BY-NC-SA 4.0
-    </a><br>
-    Uso educacional não comercial autorizado com citação.
-  </p>
-</footer>
-
