@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <title>Atividade Física, Saúde e Qualidade de Vida</title>
   <style>
+    /* Base */
     body {
       font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      margin: 40px;
-      line-height: 1.6;
+      background:#f8f9fa;
+      color:#333;
+      margin:40px;
+      line-height:1.6;
     }
-    h1 { text-align: center; color: #0a4d8c; }
-    h2 { text-align: center; color: #222; margin-top: 38px; }
+    h1 { text-align:center; color:#0a4d8c; }
+    h2 { text-align:center; color:#222; margin-top:38px; }
+
+    /* Texto principal */
     p {
       text-align: justify;
       text-indent: 2em;
@@ -20,120 +23,110 @@
       margin: 10px auto;
     }
 
-    /* Áudio */
+    /* Caixa do podcast (áudio) */
     .audio-box {
-      background: #f0f4f8;
-      border: 1px solid #dce3ea;
-      border-radius: 10px;
-      padding: 20px;
+      background:#f0f4f8;
+      border:1px solid #dce3ea;
+      border-radius:10px;
+      padding:20px;
       max-width: 640px;
-      margin: 16px auto;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,.05);
+      margin: 16px auto 8px;
+      text-align:center;
+      box-shadow:0 0 10px rgba(0,0,0,.05);
     }
-    .audio-box audio { width: 100%; outline: none; }
+    .audio-box audio { width:100%; outline:none; }
 
+    /* Controles de velocidade */
     .speed-bar {
-      margin-top: 12px;
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      font-size: 14px;
-      align-items: center;
+      margin-top:12px;
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      font-size:14px;
+      align-items:center;
     }
     .speed-btn {
-      padding: 6px 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background: #fff;
-      cursor: pointer;
-      transition: all .2s;
+      padding:6px 10px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      background:#fff;
+      cursor:pointer;
+      transition:all .2s;
     }
-    .speed-btn:hover {
-      background: #0a4d8c;
-      color: #fff;
-      border-color: #0a4d8c;
-    }
-    .speed-btn.active {
-      border-color: #0a4d8c;
-      color: #0a4d8c;
-      font-weight: bold;
-    }
+    .speed-btn:hover { background:#0a4d8c; color:#fff; border-color:#0a4d8c; }
+    .speed-btn.active { border-color:#0a4d8c; color:#0a4d8c; font-weight:bold; }
 
     /* Vídeo */
     iframe {
-      display: block;
-      margin: 24px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.2);
-      transition: transform .2s;
+      display:block;
+      margin:24px auto;
+      border-radius:10px;
+      box-shadow:0 0 12px rgba(0,0,0,0.2);
+      transition:transform .2s;
     }
     iframe:hover { transform: scale(1.02); }
 
     /* Avaliação */
     .avaliacao {
-      background: #eef6ff;
-      border: 1px solid #c7dff7;
-      border-radius: 10px;
-      padding: 25px;
-      max-width: 720px;
-      margin: 35px auto;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background:#eef6ff;
+      border:1px solid #c7dff7;
+      border-radius:10px;
+      padding:25px;
+      max-width:720px;
+      margin:35px auto;
+      text-align:center;
+      box-shadow:0 0 10px rgba(0,0,0,0.05);
     }
-    .avaliacao h3 {
-      color: #0a4d8c;
-      margin-bottom: 10px;
-    }
+    .avaliacao h3 { color:#0a4d8c; margin-bottom:10px; }
     .avaliacao p {
       text-align: justify;
       text-indent: 0;
-      margin: 8px auto;
-      max-width: 620px;
-      line-height: 1.5;
+      margin:8px auto;
+      max-width:620px;
+      line-height:1.5;
     }
     .avaliacao a {
-      display: inline-block;
-      background: #0a4d8c;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 14px;
-      transition: background 0.3s;
+      display:inline-block;
+      background:#0a4d8c;
+      color:#fff;
+      padding:10px 18px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:14px;
+      transition:background .3s;
     }
-    .avaliacao a:hover {
-      background: #063b6f;
-    }
+    .avaliacao a:hover { background:#063b6f; }
 
-    /* Referências */
+    /* Referências – sem negrito/itálico, alinhadas à esquerda, espaçamento simples */
     .referencias {
-      max-width: 900px;
-      margin: 42px auto 0;
-      text-align: left;
-      font-size: 0.9em;
-      line-height: 1.2;
+      max-width:900px;
+      margin:42px auto 0;
+      text-align:left;
+      font-size:.9em;
+      line-height:1.2; /* simples */
     }
     .referencias h3 {
-      text-align: left;
-      margin: 0 0 8px 0;
-      color: #0a4d8c;
-      font-size: 1.1em;
-      font-weight: bold;
+      text-align:left;
+      margin:0 0 8px 0;
+      color:#0a4d8c;
+      font-size:1.1em;
+      font-weight:bold;
     }
     .referencias p {
-      text-align: left;
-      text-indent: 0;
-      margin: 4px 0;
+      text-align:left;
+      text-indent:0;
+      margin:4px 0;
+      font-style: normal;
+      font-weight: normal;
     }
 
     footer {
-      text-align: center;
-      margin-top: 48px;
-      font-size: 14px;
-      color: #555;
+      text-align:center;
+      margin-top:48px;
+      font-size:14px;
+      color:#555;
     }
   </style>
 </head>
@@ -144,24 +137,21 @@
   <p>
     Este conteúdo apresenta uma reflexão sobre a relação entre atividade física, saúde e qualidade de vida, mostrando como as transformações da sociedade e os hábitos cotidianos influenciam o bem-estar humano. Com base em estudos de Nahas (2017), Buss (2000, 2020) e Araújo e Araújo (2000), discutem-se os desafios do sedentarismo e as estratégias para promover uma vida mais ativa e saudável.
   </p>
-
   <p>
     Ao longo da história, o ser humano passou de uma vida ativa, baseada na caça e na agricultura, para um modo de vida cada vez mais sedentário, marcado pelo uso de tecnologias e pela redução do movimento corporal. Essa mudança reduziu o gasto energético diário e contribuiu para o surgimento de doenças hipocinéticas, como obesidade, diabetes, hipertensão e problemas cardiovasculares. O corpo humano foi projetado para o movimento, e a falta dele impacta diretamente a saúde física e mental.
   </p>
-
   <p>
     A atividade física corresponde a qualquer movimento do corpo que aumente o gasto de energia, enquanto o exercício físico é uma forma planejada e regular dessa atividade, com objetivos de manutenção ou melhoria da saúde. A aptidão física representa a capacidade do corpo de responder adequadamente aos esforços, sendo essencial para realizar tarefas diárias e prevenir doenças. A saúde é entendida como um estado de bem-estar físico, mental e social, e a qualidade de vida depende tanto de condições pessoais quanto de fatores sociais e ambientais.
   </p>
-
   <p>
     Os autores apresentam o modelo do Pentáculo do Bem-Estar, que reúne cinco pilares de um estilo de vida saudável: prática regular de atividade física, alimentação equilibrada, lazer e descanso adequados, relações sociais positivas e ausência de vícios, além do controle do estresse e do sono de qualidade. Esses fatores podem inclusive modificar a expressão dos genes, conforme mostram estudos em epigenética, indicando que as escolhas cotidianas influenciam a saúde em nível celular.
   </p>
-
   <p>
     A promoção da saúde envolve ações coletivas e políticas públicas que criam ambientes favoráveis à prática de atividades físicas e ao desenvolvimento de hábitos saudáveis. Nesse contexto, a Educação Física Escolar tem papel essencial, pois ensina o valor do movimento como parte do autocuidado, da convivência e da cidadania. O objetivo não é apenas praticar esportes, mas compreender o movimento como elemento fundamental para o equilíbrio, a autonomia e a construção de uma vida com mais qualidade.
   </p>
 
-  <h2>Podcast: Do DNA Caçador ao Sofá</h2>
+  <!-- PODCAST -->
+  <h2>🎧 Podcast: Do DNA Caçador ao Sofá — A Jornada do Corpo Moderno</h2>
   <div class="audio-box">
     <audio id="meuAudio" controls preload="metadata">
       <source src="Do_DNA_Ca%C3%A7ador_ao_Sof%C3%A1__O_Paradoxo_da_Atividade_F%C3%ADsica_Qualida.mp3" type="audio/mpeg">
@@ -178,33 +168,34 @@
     </div>
   </div>
 
-  <h2>Vídeo: Qualidade de Vida — o Paradoxo do Movimento Moderno</h2>
+  <!-- VÍDEO -->
+  <h2>🎥 Vídeo: Qualidade de Vida — o Paradoxo do Movimento Moderno</h2>
   <iframe
     width="700"
     height="394"
     src="https://www.youtube.com/embed/QAUh602i-0Y?rel=0"
-    title="Qualidade de Vida: o Paradoxo Moderno"
+    title="Qualidade de Vida: o Paradoxo do Movimento Moderno"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 
+  <!-- AVALIAÇÃO -->
   <div class="avaliacao">
-    <h3>📝 Avaliação - Atividade Física, Saúde e Qualidade de Vida</h3>
-    <p>
-      Após ler o texto, ouvir o áudio e assistir ao vídeo disponibilizados, responda às 10 questões a seguir, marcando apenas uma alternativa em cada uma.
-    </p>
+    <h3>📝 Avaliação — Atividade Física, Saúde e Qualidade de Vida</h3>
+    <p>Após ler o texto, ouvir o podcast e assistir ao vídeo, responda às 10 questões, marcando apenas uma alternativa em cada uma.</p>
     <p>Cada questão vale 1 ponto. A avaliação poderá ser respondida uma única vez por aluno(a), sendo considerada válida apenas a primeira submissão.</p>
     <p>🕒 Disponível até <b>02/11/2025</b>.</p>
-    <a href="https://forms.gle/TWmWtaDr1VnvV7ZX7" target="_blank">Responder à Avaliação</a>
+    <a href="https://forms.gle/TWmWtaDr1VnvV7ZX7" target="_blank" rel="noopener noreferrer">Responder à Avaliação</a>
   </div>
 
+  <!-- REFERÊNCIAS -->
   <div class="referencias">
     <h3>Referências</h3>
-    <p>NAHAS, M. V. <i>Atividade Física, Saúde e Qualidade de Vida: Conceitos e Sugestões para um Estilo de Vida Ativo.</i> 7ª ed., 2017.</p>
-    <p>BUSS, P. M. <i>Promoção da Saúde e Qualidade de Vida.</i> <b>Ciência &amp; Saúde Coletiva</b>, v.5, n.1, 2000.</p>
-    <p>BUSS, P. M. et al. <i>Promoção da Saúde e Qualidade de Vida: uma Perspectiva Histórica (1980–2020).</i> <b>Ciência &amp; Saúde Coletiva</b>, v.25, n.12, 2020.</p>
-    <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. <i>Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos.</i> <b>Revista Brasileira de Medicina do Esporte</b>, v.6, n.5, 2000.</p>
+    <p>NAHAS, M. V. Atividade Física, Saúde e Qualidade de Vida: Conceitos e Sugestões para um Estilo de Vida Ativo. 7ª ed., 2017.</p>
+    <p>BUSS, P. M. Promoção da Saúde e Qualidade de Vida. Ciência & Saúde Coletiva, v.5, n.1, 2000.</p>
+    <p>BUSS, P. M. et al. Promoção da Saúde e Qualidade de Vida: uma Perspectiva Histórica (1980–2020). Ciência & Saúde Coletiva, v.25, n.12, 2020.</p>
+    <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos. Revista Brasileira de Medicina do Esporte, v.6, n.5, 2000.</p>
   </div>
 
   <footer>
@@ -214,7 +205,7 @@
   <script>
     (function () {
       const audio = document.getElementById('meuAudio');
-      const bar = document.getElementById('speedBar');
+      const bar   = document.getElementById('speedBar');
       const rateNow = document.getElementById('rateNow');
 
       function setActive(rate) {
