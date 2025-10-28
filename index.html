@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Atividade Física, Saúde e Qualidade de Vida</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f8f9fa;
       color: #333;
-      text-align: center;
       margin: 40px;
-    }
-    h1 {
-      color: #0a4d8c;
-    }
-    p {
-      max-width: 700px;
-      margin: auto;
       line-height: 1.6;
     }
+    h1 {
+      text-align: center;
+      color: #0a4d8c;
+    }
     h2 {
-      margin-top: 40px;
       color: #222;
+      margin-top: 40px;
+      text-align: center;
     }
-    audio {
-      margin-top: 15px;
-    }
-    select {
-      margin-top: 10px;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: #fff;
+    p {
+      text-align: justify;
+      text-indent: 2em;
+      max-width: 900px;
+      margin: 10px auto;
     }
     iframe {
+      display: block;
+      margin: 30px auto;
       border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
       transition: transform 0.2s ease-in-out;
     }
     iframe:hover {
       transform: scale(1.02);
     }
+    .referencias {
+      max-width: 900px;
+      margin: 50px auto;
+      text-align: justify;
+      font-size: 0.95em;
+    }
+    .referencias h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #0a4d8c;
+    }
     footer {
-      margin-top: 50px;
+      text-align: center;
+      margin-top: 60px;
       font-size: 14px;
       color: #555;
     }
@@ -53,43 +60,44 @@
   <h1>Atividade Física, Saúde e Qualidade de Vida</h1>
 
   <p>
-    Material didático da aula que aborda a relação entre atividade física, saúde e qualidade de vida,
-    considerando fatores biológicos, sociais e comportamentais. Inclui áudio explicativo, vídeo e recursos complementares.
+    Este conteúdo apresenta uma reflexão sobre a relação entre atividade física, saúde e qualidade de vida, mostrando como as transformações da sociedade e os hábitos cotidianos influenciam o bem-estar humano. Com base em estudos de Nahas (2017), Buss (2000, 2020) e Araújo e Araújo (2000), discutem-se os desafios do sedentarismo e as estratégias para promover uma vida mais ativa e saudável.
   </p>
 
-  <!-- 🎧 ÁUDIO COM CONTROLE DE VELOCIDADE -->
-  <h2>🎧 Áudio explicativo</h2>
-  <p align="center">
-    <audio id="meuAudio" controls>
-      <source src="Do_DNA_Ca%C3%A7ador_ao_Sof%C3%A1__O_Paradoxo_da_Atividade_F%C3%ADsica_Qualida.mp3" type="audio/mpeg">
-      Seu navegador não suporta a reprodução de áudio.
-    </audio>
-    <br>
-    <label for="velocidade">Velocidade:</label>
-    <select id="velocidade" onchange="document.getElementById('meuAudio').playbackRate=this.value">
-      <option value="0.75">0.75x</option>
-      <option value="1" selected>1x</option>
-      <option value="1.25">1.25x</option>
-      <option value="1.5">1.5x</option>
-      <option value="2">2x</option>
-    </select>
+  <p>
+    Ao longo da história, o ser humano passou de uma vida ativa, baseada na caça e na agricultura, para um modo de vida cada vez mais sedentário, marcado pelo uso de tecnologias e pela redução do movimento corporal. Essa mudança reduziu o gasto energético diário e contribuiu para o surgimento de doenças hipocinéticas, como obesidade, diabetes, hipertensão e problemas cardiovasculares. O corpo humano foi projetado para o movimento, e a falta dele impacta diretamente a saúde física e mental.
   </p>
 
-  <!-- 🎥 VÍDEO DO YOUTUBE EMBUTIDO -->
+  <p>
+    A atividade física corresponde a qualquer movimento do corpo que aumente o gasto de energia, enquanto o exercício físico é uma forma planejada e regular dessa atividade, com objetivos de manutenção ou melhoria da saúde. A aptidão física representa a capacidade do corpo de responder adequadamente aos esforços, sendo essencial para realizar tarefas diárias e prevenir doenças. A saúde é entendida como um estado de bem-estar físico, mental e social, e a qualidade de vida depende tanto de condições pessoais quanto de fatores sociais e ambientais.
+  </p>
+
+  <p>
+    Os autores apresentam o modelo do Pentáculo do Bem-Estar, que reúne cinco pilares de um estilo de vida saudável: prática regular de atividade física, alimentação equilibrada, lazer e descanso adequados, relações sociais positivas e ausência de vícios, além do controle do estresse e do sono de qualidade. Esses fatores podem inclusive modificar a expressão dos genes, conforme mostram estudos em epigenética, indicando que as escolhas cotidianas influenciam a saúde em nível celular.
+  </p>
+
+  <p>
+    A promoção da saúde envolve ações coletivas e políticas públicas que criam ambientes favoráveis à prática de atividades físicas e ao desenvolvimento de hábitos saudáveis. Nesse contexto, a Educação Física Escolar tem papel essencial, pois ensina o valor do movimento como parte do autocuidado, da convivência e da cidadania. O objetivo não é apenas praticar esportes, mas compreender o movimento como elemento fundamental para o equilíbrio, a autonomia e a construção de uma vida com mais qualidade.
+  </p>
+
   <h2>🎥 Vídeo explicativo</h2>
-  <p align="center">
-    <iframe width="700" height="394"
-      src="https://www.youtube.com/embed/QAUh602i-0Y?rel=0"
-      title="Qualidade de Vida: o Paradoxo Moderno"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </p>
+  <iframe width="700" height="394"
+    src="https://www.youtube.com/embed/QAUh602i-0Y?rel=0"
+    title="Qualidade de Vida: o Paradoxo Moderno"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
 
-  <!-- RODAPÉ -->
+  <div class="referencias">
+    <h3>📚 Referências</h3>
+    <p>NAHAS, M. V. <i>Atividade Física, Saúde e Qualidade de Vida: Conceitos e Sugestões para um Estilo de Vida Ativo.</i> 7ª ed. 2017.</p>
+    <p>BUSS, P. M. <i>Promoção da Saúde e Qualidade de Vida.</i> <b>Ciência & Saúde Coletiva</b>, v.5, n.1, 2000.</p>
+    <p>BUSS, P. M. et al. <i>Promoção da Saúde e Qualidade de Vida: uma Perspectiva Histórica (1980–2020).</i> <b>Ciência & Saúde Coletiva</b>, v.25, n.12, 2020.</p>
+    <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. <i>Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos.</i> <b>Revista Brasileira de Medicina do Esporte</b>, v.6, n.5, 2000.</p>
+  </div>
+
   <footer>
-    <p>© 2025 | Professora Monique T. C. Eleutério – Educação Física e Saúde</p>
+    © 2025 | Professora Monique T. C. Eleutério – Educação Física e Saúde
   </footer>
 
 </body>
