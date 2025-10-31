@@ -4,32 +4,31 @@
   <meta charset="UTF-8" />
   <title>Atividade Física, Saúde e Qualidade de Vida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Fonte moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+    /* Base */
+    * { box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(180deg, #e3f2fd 0%, #f1f8e9 100%);
       color: #333;
       margin: 0;
-      padding: 0;
       line-height: 1.6;
     }
 
-    /* === BANNER SÓ COM A IMAGEM === */
-    .banner {
-      background-image: url("banner.png"); /* ALTERE PARA O NOME DA SUA IMAGEM */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 280px; /* se quiser mudar o tamanho, ajuste aqui */
+    /* BANNER: só imagem, sem textos sobrepostos */
+    header.banner {
       border-bottom: 6px solid #81c784;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+    header.banner img {
+      display: block;       /* remove espaços em branco */
+      width: 100%;          /* ocupa toda a largura */
+      height: auto;         /* mantém proporção */
+    }
 
+    /* Conteúdo */
     main {
       max-width: 950px;
       margin: 40px auto;
@@ -38,41 +37,23 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
       padding: 40px 50px;
     }
-
     main h1 {
       text-align: center;
       color: #0a4d8c;
       font-size: 2.2em;
-      margin-bottom: 0;
+      margin: 0 0 6px 0;
     }
-
-    main p:first-of-type {
+    .subtitulo-pagina {
       text-align: center;
       color: #2e7d32;
-      margin-top: 4px;
+      margin: 0 0 20px 0;
       font-weight: 500;
     }
+    main p { margin: 12px 0; }
+    .subtitulo { font-weight: 600; margin-top: 32px; }
+    ul { margin: 20px 0 20px 20px; }
 
-    main p {
-      text-align: left;
-      margin: 12px 0;
-    }
-
-    .subtitulo {
-      font-weight: bold;
-      margin-top: 32px;
-    }
-
-    ul {
-      margin: 20px 0 20px 20px;
-      line-height: 1.6;
-    }
-
-    h2 {
-      text-align: center;
-      color: #0a4d8c;
-      margin-top: 50px;
-    }
+    h2 { text-align: center; color: #0a4d8c; margin-top: 50px; }
 
     .audio-box, .avaliacao {
       background:#f0f4f8;
@@ -84,7 +65,6 @@
       text-align:center;
       box-shadow:0 4px 12px rgba(0,0,0,0.08);
     }
-
     .audio-box audio { width:100%; }
 
     iframe {
@@ -95,11 +75,7 @@
       max-width:100%;
     }
 
-    .avaliacao h3 {
-      color:#0a4d8c;
-      margin-bottom:10px;
-    }
-
+    .avaliacao h3 { color:#0a4d8c; margin-bottom:10px; }
     .avaliacao a {
       display:inline-block;
       background: linear-gradient(90deg, #0a4d8c, #2e7d32);
@@ -107,15 +83,11 @@
       padding:10px 20px;
       border-radius:8px;
       text-decoration:none;
-      font-weight:bold;
+      font-weight:600;
       margin-top:14px;
-      transition:all .3s;
+      transition: transform .2s;
     }
-
-    .avaliacao a:hover {
-      background: linear-gradient(90deg, #2e7d32, #0a4d8c);
-      transform: scale(1.05);
-    }
+    .avaliacao a:hover { transform: scale(1.05); }
 
     .referencias {
       max-width:900px;
@@ -137,34 +109,33 @@
     @media (max-width: 768px) {
       main { padding: 25px; margin: 20px; }
       main h1 { font-size: 1.8em; }
-      .banner { height: 200px; }
     }
   </style>
 </head>
-
 <body>
 
   <!-- BANNER SÓ COM A IMAGEM -->
-  <header class="banner"></header>
+  <header class="banner" aria-label="Atividade Física, Saúde e Qualidade de Vida">
+    <!-- Troque 'banner.png' pelo nome exato do seu arquivo -->
+    <img src="banner.png" alt="Banner com ícones de atividade física e saúde">
+  </header>
 
   <main>
     <h1>Atividade Física, Saúde e Qualidade de Vida</h1>
-    <p>Movimente-se. Inspire-se. Viva com equilíbrio.</p>
+    <p class="subtitulo-pagina">Movimente-se. Inspire-se. Viva com equilíbrio.</p>
 
     <p>Nesta atividade, você vai explorar o tema <strong>“Atividade Física, Saúde e Qualidade de Vida”</strong> de forma integrada.</p>
-
     <p>A proposta é que você reflita sobre o impacto do sedentarismo e das suas escolhas diárias na própria saúde e bem-estar. Pense em como o tempo que passa sentado, o uso de telas, os trajetos curtos feitos de carro ou moto e a falta de tempo para se movimentar afetam o seu corpo e a sua disposição.</p>
-
     <p>Mais do que falar sobre exercícios, esta atividade convida você a observar o seu cotidiano, reconhecer pequenas oportunidades de movimento e compreender que cuidar do corpo é também cuidar da mente. Caminhar até a escola, alongar-se entre os estudos, brincar, dançar ou praticar esportes são formas simples de manter o corpo ativo e de melhorar a qualidade de vida.</p>
 
     <p class="subtitulo">Para desenvolver esta proposta:</p>
     <ul>
-      <li>Ouça o podcast <em>“Do DNA Caçador ao Sofá”</em>, que discute as mudanças no nosso modo de vida e os desafios para manter o corpo em movimento;</li>
-      <li>Assista ao vídeo <em>“Qualidade de Vida — o Paradoxo do Movimento Moderno”</em>, observando as ideias centrais sobre hábitos saudáveis;</li>
-      <li>Responda à avaliação, registrando o que aprendeu sobre o papel da atividade física na melhoria da qualidade de vida.</li>
+      <li>Ouça o podcast <em>“Do DNA Caçador ao Sofá”</em>;</li>
+      <li>Assista ao vídeo <em>“Qualidade de Vida — o Paradoxo do Movimento Moderno”</em>;</li>
+      <li>Responda à avaliação registrando o que aprendeu.</li>
     </ul>
 
-    <p>O objetivo é que, ao final, você reavalie seus hábitos, entenda a importância da atividade física como parte da saúde integral e perceba que o movimento não depende de tempo ou recursos, mas de atitude e consciência.</p>
+    <p>O objetivo é que, ao final, você reavalie seus hábitos e compreenda a atividade física como parte da saúde integral.</p>
 
     <h2>🎧 Podcast: Do DNA Caçador ao Sofá</h2>
     <div class="audio-box">
@@ -185,7 +156,7 @@
 
     <div class="avaliacao">
       <h3>📝 Avaliação — Atividade Física, Saúde e Qualidade de Vida</h3>
-      <p>Após ouvir o podcast e assistir ao vídeo, responda às 10 questões, marcando apenas uma alternativa.</p>
+      <p>Após ouvir o podcast e assistir ao vídeo, responda às 10 questões.</p>
       <p>Cada questão vale 1 ponto. A avaliação poderá ser respondida uma única vez.</p>
       <p>🕒 Disponível até <b>02/11/2025</b>.</p>
       <a href="https://forms.gle/TWmWtaDr1VnvV7ZX7" target="_blank">Responder à Avaliação</a>
@@ -196,12 +167,12 @@
       <p>NAHAS, M. V. <em>Atividade Física, Saúde e Qualidade de Vida</em>. 7ª ed., 2017.</p>
       <p>BUSS, P. M. Promoção da Saúde e Qualidade de Vida. <em>Ciência & Saúde Coletiva</em>, v.5, n.1, 2000.</p>
       <p>BUSS, P. M. et al. Promoção da Saúde e Qualidade de Vida: uma Perspectiva Histórica (1980–2020). <em>Ciência & Saúde Coletiva</em>, v.25, n.12, 2020.</p>
-      <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos. <em>Revista Brasileira de Medicina do Esporte</em>, v.6, n.5, 2000.</p>
+      <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos. <em>Rev. Bras. Med. Esporte</em>, v.6, n.5, 2000.</p>
     </div>
   </main>
 
   <footer>
-    © 2025 | Professora de Educação Física Monique Terezinha Cezário Eleutério  
+    © 2025 | Professora de Educação Física Monique Terezinha Cezário Eleutério
     <br>Licença: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color:#c8e6c9;">CC BY-NC-SA 4.0</a>
   </footer>
 
