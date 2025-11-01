@@ -5,6 +5,9 @@
   <title>Atividade Física, Saúde e Qualidade de Vida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    /* Cor de marca (mesma do banner) */
+    :root { --brand: #006D6F; }
+
     /* Base */
     body {
       font-family: Arial, sans-serif;
@@ -136,12 +139,21 @@
       font-weight: normal;
     }
 
+    /* Rodapé com faixa na cor do banner */
     footer {
       text-align:center;
       margin-top:48px;
       font-size:14px;
-      color:#444;
+      color:#fff;
       line-height:1.6;
+      background:var(--brand);
+      padding:24px 10px;
+      border-radius:8px;
+    }
+    footer a {
+      color:#fff;
+      font-weight:bold;
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
@@ -151,11 +163,11 @@
 </head>
 <body>
 
-  <!-- BANNER -->
+  <!-- Banner -->
   <img src="banner.png" alt="Banner Atividade Física, Saúde e Qualidade de Vida"
        style="display:block; margin:0 auto 30px; max-width:100%; border-radius:10px;">
 
-  <!-- ⚠️ O H1 FOI REMOVIDO AQUI -->
+  <!-- (título removido conforme solicitado) -->
 
   <p>
     Nesta atividade, você vai explorar o tema <strong>“Atividade Física, Saúde e Qualidade de Vida”</strong> de forma integrada.
@@ -227,14 +239,14 @@
   </div>
 
   <!-- RODAPÉ -->
- <footer>
-  <p>© 2025 | Professora de Educação Física Monique Terezinha Cezário Eleutério | email: eleuterio.mtc@gmail.com</p>
-  <p>Este material está licenciado sob 
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
-      CC BY-NC-SA 4.0
-    </a> | Uso educacional não comercial autorizado com citação.
-  </p>
-</footer>
+  <footer>
+    <p>© 2025 | Professora de Educação Física Monique Terezinha Cezário Eleutério | email: eleuterio.mtc@gmail.com</p>
+    <p>Este material está licenciado sob 
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        CC BY-NC-SA 4.0
+      </a> | Uso educacional não comercial autorizado com citação.
+    </p>
+  </footer>
 
   <script>
     (function () {
