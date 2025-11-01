@@ -5,10 +5,8 @@
   <title>Atividade Física, Saúde e Qualidade de Vida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* Cor de marca (mesma do banner) */
     :root { --brand: #006D6F; }
 
-    /* Base */
     body {
       font-family: Arial, sans-serif;
       background:#f8f9fa;
@@ -16,10 +14,14 @@
       margin:40px;
       line-height:1.6;
     }
-    h1 { text-align:center; color:#0a4d8c; }
-    h2 { text-align:center; color:#222; margin-top:38px; }
 
-    /* Texto principal */
+    /* Subtítulos na cor solicitada */
+    h2 {
+      text-align:center;
+      color: var(--brand);
+      margin-top:38px;
+    }
+
     p {
       text-align: left;
       text-indent: 0;
@@ -38,9 +40,9 @@
       max-width: 900px;
       margin: 30px auto 10px;
       font-weight: bold;
+      color: var(--brand); /* Subtítulo também com a cor */
     }
 
-    /* Podcast (áudio) */
     .audio-box {
       background:#f0f4f8;
       border:1px solid #dce3ea;
@@ -70,10 +72,9 @@
       cursor:pointer;
       transition:all .2s;
     }
-    .speed-btn:hover { background:#0a4d8c; color:#fff; border-color:#0a4d8c; }
-    .speed-btn.active { border-color:#0a4d8c; color:#0a4d8c; font-weight:bold; }
+    .speed-btn:hover { background:var(--brand); color:#fff; border-color:var(--brand); }
+    .speed-btn.active { border-color:var(--brand); color:var(--brand); font-weight:bold; }
 
-    /* Vídeo */
     iframe {
       display:block;
       margin:24px auto;
@@ -84,7 +85,6 @@
     }
     iframe:hover { transform: scale(1.02); }
 
-    /* Avaliação */
     .avaliacao {
       background:#eef6ff;
       border:1px solid #c7dff7;
@@ -95,7 +95,8 @@
       text-align:center;
       box-shadow:0 0 10px rgba(0,0,0,0.05);
     }
-    .avaliacao h3 { color:#0a4d8c; margin-bottom:10px; }
+    .avaliacao h3 { color:var(--brand); margin-bottom:10px; }
+
     .avaliacao p {
       text-align: justify;
       text-indent: 0;
@@ -103,9 +104,11 @@
       max-width:620px;
       line-height:1.5;
     }
+
+    /* Botão com a cor do banner */
     .avaliacao a {
       display:inline-block;
-      background:#0a4d8c;
+      background:var(--brand);
       color:#fff;
       padding:10px 18px;
       border-radius:6px;
@@ -114,9 +117,8 @@
       margin-top:14px;
       transition:background .3s;
     }
-    .avaliacao a:hover { background:#063b6f; }
+    .avaliacao a:hover { background:#004b4d; }
 
-    /* Referências */
     .referencias {
       max-width:900px;
       margin:42px auto 0;
@@ -127,19 +129,17 @@
     .referencias h3 {
       text-align:left;
       margin:0 0 8px 0;
-      color:#0a4d8c;
+      color:var(--brand);
       font-size:1.1em;
       font-weight:bold;
     }
+
     .referencias p {
       text-align:left;
       text-indent:0;
       margin:4px 0;
-      font-style: normal;
-      font-weight: normal;
     }
 
-    /* Rodapé com faixa na cor do banner */
     footer {
       text-align:center;
       margin-top:48px;
@@ -163,11 +163,8 @@
 </head>
 <body>
 
-  <!-- Banner -->
   <img src="banner.png" alt="Banner Atividade Física, Saúde e Qualidade de Vida"
        style="display:block; margin:0 auto 30px; max-width:100%; border-radius:10px;">
-
-  <!-- (título removido conforme solicitado) -->
 
   <p>
     Nesta atividade, você vai explorar o tema <strong>“Atividade Física, Saúde e Qualidade de Vida”</strong> de forma integrada.
@@ -190,7 +187,6 @@
     O objetivo é que, ao final, você reavalie seus hábitos, entenda a importância da atividade física como parte da saúde integral e perceba que o movimento não depende de tempo ou recursos, mas de atitude e consciência.
   </p>
 
-  <!-- PODCAST -->
   <h2>Podcast: Do DNA Caçador ao Sofá</h2>
   <div class="audio-box">
     <audio id="meuAudio" controls preload="metadata">
@@ -208,7 +204,6 @@
     </div>
   </div>
 
-  <!-- VÍDEO -->
   <h2>Vídeo: Qualidade de Vida — o Paradoxo do Movimento Moderno</h2>
   <iframe
     width="700"
@@ -220,16 +215,18 @@
     allowfullscreen>
   </iframe>
 
-  <!-- AVALIAÇÃO -->
   <div class="avaliacao">
     <h3>📝 Avaliação — Atividade Física, Saúde e Qualidade de Vida</h3>
     <p>Após ouvir o podcast e assistir ao vídeo, responda às 10 questões, marcando apenas uma alternativa em cada uma.</p>
     <p>Cada questão vale 1 ponto. A avaliação poderá ser respondida uma única vez por aluno(a), sendo considerada válida apenas a primeira submissão.</p>
     <p>🕒 Disponível até <b>02/11/2025</b>.</p>
-    <a href="https://forms.gle/TWmWtaDr1VnvV7ZX7" target="_blank" rel="noopener noreferrer">Responder à Avaliação</a>
+
+    <!-- Botão alterado para a cor solicitada -->
+    <a href="https://forms.gle/TWmWtaDr1VnvV7ZX7" target="_blank" rel="noopener noreferrer">
+      Responder à Avaliação
+    </a>
   </div>
 
-  <!-- REFERÊNCIAS -->
   <div class="referencias">
     <h3>Referências</h3>
     <p>NAHAS, M. V. <em>Atividade Física, Saúde e Qualidade de Vida: Conceitos e Sugestões para um Estilo de Vida Ativo</em>. 7ª ed., 2017.</p>
@@ -238,7 +235,6 @@
     <p>ARAÚJO, D. S. M. S.; ARAÚJO, C. G. S. Aptidão Física, Saúde e Qualidade de Vida Relacionada à Saúde em Adultos. <em>Revista Brasileira de Medicina do Esporte</em>, v.6, n.5, 2000.</p>
   </div>
 
-  <!-- RODAPÉ -->
   <footer>
     <p>© 2025 | Professora de Educação Física Monique Terezinha Cezário Eleutério | email: eleuterio.mtc@gmail.com</p>
     <p>Este material está licenciado sob 
