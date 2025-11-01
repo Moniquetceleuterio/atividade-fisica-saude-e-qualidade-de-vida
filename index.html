@@ -254,5 +254,34 @@
     </p>
   </footer>
 
+  <!-- ✅ Script para controlar a velocidade pelo BOTÃO (não pelo menu do player) -->
+  <script>
+    (function () {
+      const audio   = document.getElementById('meuAudio');
+      const bar     = document.getElementById('speedBar');
+      const rateNow = document.getElementById('rateNow');
+
+      function setActive(rate) {
+        document.querySelectorAll('.speed-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.rate === String(rate));
+        });
+        rateNow.textContent = `(atual: ${String(rate).replace('.', ',')}x)`;
+      }
+
+      bar.addEventListener('click', function (e) {
+        const btn = e.target.closest('.speed-btn');
+        if (!btn) return;
+        const rate = parseFloat(btn.dataset.rate);
+        audio.playbackRate = rate;
+        setActive(rate);
+        // opcional: iniciar/retomar reprodução ao trocar a velocidade
+        // audio.play();
+      });
+
+      // velocidade padrão
+      setActive(1);
+    })();
+  </script>
+
 </body>
 </html>
