@@ -26,7 +26,7 @@ O conteúdo está disponível em formato de **página web (HTML)**, integrando *
 - Relação entre **atividade física, saúde e qualidade de vida**  
 - Impactos do **sedentarismo** no bem-estar físico e mental  
 - Importância das **escolhas cotidianas e do movimento corporal**  
-- Papel da **Educação Física Escolar** na promoção da saúde integral  
+- Papel da **Educação Física Escolar** na promoção da saúde  
 
 ---
 
