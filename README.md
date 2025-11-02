@@ -1,8 +1,8 @@
 # Atividade Física, Saúde e Qualidade de Vida
 
-Este repositório reúne **material didático interativo**, com o objetivo de promover reflexões sobre **atividade física, saúde e qualidade de vida** no contexto da **Educação Física Escolar**.
+Este repositório reúne **material didático interativo**, com o objetivo de promover reflexões sobre **atividade física, saúde e qualidade de vida**.
 
-O conteúdo está disponível em formato de **página web (HTML)**, integrando **texto introdutório, podcast, vídeo educativo e avaliação online**, para proporcionar uma aprendizagem mais dinâmica e acessível aos estudantes.
+O conteúdo está disponível em formato de **página web (HTML)**, integrando **texto introdutório, podcast, vídeo educativo e Teste de Conhecimento online**, para proporcionar uma aprendizagem mais dinâmica e acessível.
 
 ---
 
@@ -26,7 +26,6 @@ O conteúdo está disponível em formato de **página web (HTML)**, integrando *
 - Relação entre **atividade física, saúde e qualidade de vida**  
 - Impactos do **sedentarismo** no bem-estar físico e mental  
 - Importância das **escolhas cotidianas e do movimento corporal**  
-- Papel da **Educação Física Escolar** na promoção da saúde  
 
 ---
 
@@ -48,5 +47,5 @@ Uso educacional **não comercial** autorizado, mediante citação da autora.
 
 ### Contato
 
-📧 **eleuterio.mtc@gmail.com**  
-📍 Professora de Educação Física — Brasil  
+**eleuterio.mtc@gmail.com**  
+Professora de Educação Física — Brasil  
