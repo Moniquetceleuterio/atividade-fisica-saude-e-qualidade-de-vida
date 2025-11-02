@@ -1,6 +1,6 @@
 # Atividade Física, Saúde e Qualidade de Vida
 
-Este repositório reúne **material didático interativo** desenvolvido pela professora **Monique Terezinha Cezário Eleutério**, com o objetivo de promover reflexões sobre **atividade física, saúde e qualidade de vida** no contexto da **Educação Física Escolar**.
+Este repositório reúne **material didático interativo**, com o objetivo de promover reflexões sobre **atividade física, saúde e qualidade de vida** no contexto da **Educação Física Escolar**.
 
 O conteúdo está disponível em formato de **página web (HTML)**, integrando **texto introdutório, podcast, vídeo educativo e avaliação online**, para proporcionar uma aprendizagem mais dinâmica e acessível aos estudantes.
 
