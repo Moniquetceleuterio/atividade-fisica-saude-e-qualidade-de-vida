@@ -1,4 +1,4 @@
-# 🏃‍♀️ Atividade Física, Saúde e Qualidade de Vida
+#Atividade Física, Saúde e Qualidade de Vida
 
 Este repositório reúne **material didático interativo** desenvolvido pela professora **Monique Terezinha Cezário Eleutério**, com o objetivo de promover reflexões sobre **atividade física, saúde e qualidade de vida** no contexto da **Educação Física Escolar**.
 
@@ -6,13 +6,13 @@ O conteúdo está disponível em formato de **página web (HTML)**, integrando *
 
 ---
 
-## 🌐 Acesse o conteúdo completo
+## Acesse o conteúdo completo
 
-👉 [Clique aqui para abrir a página](https://moniquetceleuterio.github.io/atividade-fisica-saude-e-qualidade-de-vida/)
+[Clique aqui para abrir a página](https://moniquetceleuterio.github.io/atividade-fisica-saude-e-qualidade-de-vida/)
 
 ---
 
-## 🧩 Estrutura do projeto
+## Estrutura do projeto
 
 - `index.html` → Página principal, construída em **HTML + CSS + JavaScript**, com layout responsivo.  
 - `Do_DNA_Caçador_ao_Sofá__O_Paradoxo_da_Atividade_Física_Qualida.mp3` → Áudio do podcast.  
@@ -21,7 +21,7 @@ O conteúdo está disponível em formato de **página web (HTML)**, integrando *
 
 ---
 
-## 🧠 Conceitos abordados
+## Conceitos abordados
 
 - Relação entre **atividade física, saúde e qualidade de vida**  
 - Impactos do **sedentarismo** no bem-estar físico e mental  
@@ -30,7 +30,7 @@ O conteúdo está disponível em formato de **página web (HTML)**, integrando *
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **HTML5** para estrutura e semântica  
 - **CSS3** para estilização e responsividade  
@@ -39,14 +39,14 @@ O conteúdo está disponível em formato de **página web (HTML)**, integrando *
 
 ---
 
-## 📜 Licença
+## Licença
 
 Este material está licenciado sob a [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 Uso educacional **não comercial** autorizado, mediante citação da autora.
 
 ---
 
-### ✉️ Contato
+### Contato
 
 📧 **eleuterio.mtc@gmail.com**  
 📍 Professora de Educação Física — Brasil  
